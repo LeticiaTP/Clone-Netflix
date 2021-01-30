@@ -12,7 +12,7 @@
 /* Elementos base*/
 body{
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', sans-serif;
     color: #fff;
 }
 
@@ -90,7 +90,41 @@ header nav a:hover{
     margin-right: 8px;
 }
 
-/*
-    <script src="js/owl/jquery.min.js"></script>
-    <script src="js/owl/owl.carousel.min.js"></script>
-    <script src="js/owl/setup.js"></script>*/
+.texto {
+    margin-bottom: 1%;
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-doramas{
+    margin-top:10px;
+    margin-bottom: 15px;
+    background-color: rgba(17, 17, 17, 0.712);
+}
+
+/*Responsividade*/
+@media screen and (max-width:700px){
+    header .container{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+}
